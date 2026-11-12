@@ -1,0 +1,22 @@
+# Configuration Déploiement Render (render.yaml)
+# Déploiement automatique en 1-clic pour IMMOAGENT AI
+services:
+  - type: web
+    name: immoagent-ai
+    env: node
+    plan: starter
+    region: frankfurt # ou oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: GEMINI_API_KEY
+        sync: false # À renseigner dans les secrets Render
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false

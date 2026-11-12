@@ -1,0 +1,6 @@
+{
+  "name": "ImmoAgent AI - Agent Commercial IA Immobilier SaaS",
+  "description": "Plateforme SaaS internationale d'agents commerciaux IA pour agences immobilières. Qualification 24/7, visites, intégrations FedaPay, Paddle et WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
