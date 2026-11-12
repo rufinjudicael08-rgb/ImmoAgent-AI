@@ -47,8 +47,8 @@ import { Sparkles, ShieldCheck, Building2 } from 'lucide-react';
 
 export default function App() {
   const [language, setLanguage] = useState<Language>(() => detectBrowserLanguage());
-  const [currency, setCurrency] = useState<Currency>('EUR');
-  const [currentTab, setCurrentTab] = useState<string>('dashboard');
+  const [currency, setCurrency] = useState<Currency>('XOF');
+  const [currentTab, setCurrentTab] = useState<string>('landing');
 
   // Multi-agency state
   const [agencies, setAgencies] = useState<Agency[]>(mockAgencies);
